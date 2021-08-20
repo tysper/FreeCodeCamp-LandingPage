@@ -1,34 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
 }
 
+/* NAVBAR */
 nav {
   background-color:rgba(23, 23, 68);
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   height: 70px;
 }
 
-nav * {
+/* spacing between items */
+nav ul, nav li, nav div {
   display: inline-block;
   padding: 10px;
   margin: 0 20px;
   box-sizing: border-box;
 }
 
+/* logo */
+nav div {
+  width: 250px;
+  height: 70px;
+  background-image: url("./images/Sparkles-logos_white.png");
+  background-size: 120%;
+  background-position: center;
+}
+
+/* links appearance */
 nav li a:link, nav li a:visited {
   text-decoration: none;
   color: white;
 }
 
-nav ul:last-child {
-  margin: 0 50px;
+/* position of box of links */
+nav ul {
+  position: absolute;
+  right: 0;
+  margin: 5px;
+  user-select: none;
 }
 
-.main {
-  margin: 90px 0 0 0;
+/* last element */
+nav ul:last-child {
+  margin-right: 50px;
 }
+
+/* MAIN CONTAINER */
+main, footer {
+  padding: 20px 0 0 0;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+}
+
+/* WELCOMING */
+header {
+  display: grid;
+  margin: 0 40px;
+  height: 90%;
+  text-align: left;
+  /* border: 1px solid black; */
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.welcoming-container {
+  grid-area: 1/1;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Container for the text and subtext */
+.w-div-text {
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* Title */
+.w-div-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* Sub-title */
+.w-div-text p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* container for the input and button */
+.w-div-input-button{
+  width: 100%;
+  text-align: center;
+}
+
+/* Textbox for input */
+.w-div-input-button input {
+  font-size: 22px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 70%;
+  border-radius: 5px;
+  border: 1px rgba(23, 23, 68) solid;
+}
+
+/* Button for trying */
+.w-div-input-button button {
+  font-size: 23px;
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(23, 23, 68);
+  color: white;
+}
+
+.w-div-input-button button:hover {
+  background-color: rgb(9, 9, 78);
+  cursor: pointer;
+}
+
+.w-div-img {
+  /* background: blue; */
+  height: 100%;
+  width: 100%;
+  grid-area: 1/2/2/4;
+  background-image: url("./images/undraw_data_processing_yrrv.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:scroll;
+}
+
+/* Features */
+
+.features-div {
+  height: 720px;
+  border: 1px solid black;
+  position: relative;
+}
+
+/* Defining the size of the anchor */
+#features-anchor, #how-it-works-anchor, #pricing-anchor {
+  height: 80px;
+  width: 80px;
+  border: 1px solid black;
+}
+
+/* Anchor for features */
+#features-anchor {
+  position: absolute;
+  top: -90px;
+}
+
+/* Features title */
+.features-div h2 {
+  text-align: center;
+  font-size: 42px;
+  margin: 40px 0;
+}
+
+/* Container for the features */
+.feature-items {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 60%;
+}
+
+/* Card divs */
+
+.feature-items div {
+  border: 1px solid black;
+  margin-left: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feature-items {
+  width: 100%;
+  /* margin-left: 30px; */
+}
+
+/* Last card div */
+.feature-items:last-child {
+  margin-right: 30px; 
+}
+
+/* Images */
+
+/* Monitor your team */
+.feature-items .monitor-img {
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/research.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+/* Real-Time Data */
+.feature-items .data-img {
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/database.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+/* Suport 24/7 */
+.feature-items .support-img {
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/support.png);
+  background-size: 30%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.how-it-works-div {
+  height: 720px;
+}
+
