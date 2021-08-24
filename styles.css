@@ -4,6 +4,7 @@
   font-family: 'Atkinson Hyperlegible', sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* NAVBAR */
@@ -14,6 +15,8 @@ nav {
   left: 0;
   right: 0;
   height: 70px;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgb(20, 20, 20);
 }
 
 /* spacing between items */
@@ -58,7 +61,7 @@ main, footer {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
 }
 
 /* WELCOMING */
@@ -121,7 +124,7 @@ header {
   width: 25%;
   border-radius: 5px;
   border: none;
-  background-color: rgba(23, 23, 68);
+  background-color: #171744;
   color: white;
 }
 
@@ -130,6 +133,7 @@ header {
   cursor: pointer;
 }
 
+/* Computer photo */
 .w-div-img {
   /* background: blue; */
   height: 100%;
@@ -143,10 +147,8 @@ header {
 }
 
 /* Features */
-
 .features-div {
-  height: 720px;
-  border: 1px solid black;
+  height: 650px;
   position: relative;
 }
 
@@ -154,95 +156,279 @@ header {
 #features-anchor, #how-it-works-anchor, #pricing-anchor {
   height: 80px;
   width: 80px;
-  border: 1px solid black;
 }
 
 /* Anchor for features */
 #features-anchor {
   position: absolute;
-  top: -90px;
+  top: -120px;
 }
 
 /* Features title */
 .features-div h2 {
   text-align: center;
   font-size: 42px;
-  margin: 40px 0;
+  margin-bottom: 70px;
 }
 
 /* Container for the features */
 .feature-items {
-  border: 1px solid black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 60%;
+  column-gap: 40px;
+  height: 70%;
 }
 
 /* Card divs */
-
 .feature-items div {
-  border: 1px solid black;
-  margin-left: 30px;
-  padding: 10px;
+  box-shadow: 0 5px 20px rgba(36, 36, 36, 0.377);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 70px;
+}
+
+.feature-items h3 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.feature-items p {
+  font-size: 18px;
 }
 
 .feature-items {
   width: 100%;
-  /* margin-left: 30px; */
 }
 
-/* Last card div */
-.feature-items:last-child {
-  margin-right: 30px; 
-}
-
-/* Images */
-
-/* Monitor your team */
-.feature-items .monitor-img {
+/* IMAGES */
+.monitor-img, .data-img, .support-img {
   height: 70px;
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(./images/research.png);
-  background-size: 30%;
+  background-size: 28%;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 20px;
+  box-shadow: none !important;
+}
+
+/* Monitor */
+.monitor-img {
+  background-image: url(./images/research.png);
 }
 
 /* Real-Time Data */
-.feature-items .data-img {
-  height: 70px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.data-img {
   background-image: url(./images/database.png);
-  background-size: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
 }
 
 /* Suport 24/7 */
-.feature-items .support-img {
-  height: 70px;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.support-img {
   background-image: url(./images/support.png);
-  background-size: 30%;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
 }
 
+
+/* How it works */
+#how-it-works {
+  position: relative;
+}
+
+/* For positioning */
+#how-it-works-anchor {
+  height: 80px;
+  width: 80px;
+  /* border: 1px solid black; */
+  position: absolute;
+  top: -130px;
+}
+
+/*  outter div of how it works */
 .how-it-works-div {
-  height: 720px;
+  height: 500px;
+  /* border: 1px solid black; */
+  border: 2px solid #171744;
+  border-radius: 10px;
+  width: 100%;
 }
 
+/* Title of how it works */
+.how-it-works-div h2 {
+  text-align: center;
+  font-size: 42px;
+  margin: 70px 0;
+}
+
+/* Web */
+.on-web {
+  display: block;
+  width: 45%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* box-shadow: 0 5px 20px rgba(36, 36, 36, 0.377); */
+  border-radius: 10px;
+  float: left;
+}
+
+/* clear-fix hack */
+.on-web::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* div of the on-web features */
+.on-web-div {
+  float: left;
+  /* border: 1px solid yellow; */
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* titles of the on-web features */
+.on-web h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* On web list of features */
+.on-web li {
+  font-size: 20px;
+}
+
+
+/* Phone */
+.on-phone {
+  display: block;
+  width: 45%;
+  /* border: 1px solid rgb(0, 0, 0); */
+  /* box-shadow: 0 5px 20px rgba(36, 36, 36, 0.377); */
+  border-radius: 10px;
+  float: right;
+}
+
+/* Clear-fix hack */
+.on-phone::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* div for the on-phone features */
+.on-phone-div {
+  float: left;
+  /* border: 1px solid yellow; */
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* titles of the on-phone div */
+.on-phone h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-align: center;
+}
+
+/* List of the features on the phone */
+.on-phone li {
+  font-size: 20px;
+}
+
+/* Pricing */
+#pricing {
+  position: relative;
+}
+
+/* Anchor for positioning */
+#pricing-anchor {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  top: -90px;
+}
+
+/* Pricing Starts here */
+.pricing-div {
+  margin: 70px 0;
+  
+}
+
+/* Title of the pricing */
+.pricing-div h2 {
+  text-align: center;
+  margin: 70px 0;
+  font-size: 42px;
+}
+
+/* div for the cards */
+.inner-pricing {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Left div */
+.premium-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 60px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -5px 5px 20px -8px rgba(36, 36, 36, 0.322);
+  border-top: 5px solid rgb(9, 9, 78);
+}
+
+/* Center div */
+.premium-plus-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 110%;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(36, 36, 36, 0.322);
+  border-top: 8px solid rgb(9, 9, 78);
+}
+
+/* Right Div */
+.premium-max-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 60px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 5px 5px 20px -8px rgba(36, 36, 36, 0.322);
+  border-top: 5px solid rgb(9, 9, 78);
+}
+
+/* Footer */
+footer {
+  margin-top: 200px;
+  background-color: #171744;
+  color: white;
+  width: 100%;
+  padding: 0 80px;
+}
+
+footer * {
+  display: inline-block;
+}
