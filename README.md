@@ -11,3 +11,4 @@ I did some changes yesterday, and also added some parts of the page but I forgot
 
 #2021-08-25:
 I've finished everything already, now I have to make a responsive layout, and believe that will take some time because my current layout is a little to complex for me, so I think I will struggle a little. The good thing is that even if I struggle a little in this part, I thinks it is worthy, also I acquired some experiences with flex box and grid. I have a long way to go, yet I feel like I am on the right track.
+Preview: <a href="https://codepen.io/tysper013/full/vYZEzzO">Version 1 - Codepen</a>
