@@ -142,8 +142,9 @@ header {
   background-image: url("./images/undraw_data_processing_yrrv.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom center;
   background-attachment:scroll;
+  margin-top: 70px;
 }
 
 /* Features */
@@ -250,10 +251,10 @@ header {
 /*  outter div of how it works */
 .how-it-works-div {
   height: 500px;
-  /* border: 1px solid black; */
   border: 2px solid #171744;
   border-radius: 10px;
   width: 100%;
+  box-shadow: 0 5px 20px rgba(36, 36, 36, 0.377);
 }
 
 /* Title of how it works */
@@ -374,7 +375,7 @@ header {
 
 /* div for the cards */
 .inner-pricing {
-  height: 400px;
+  height: 420px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -384,8 +385,8 @@ header {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100%;
   padding: 60px;
   border-radius: 10px 0 0 10px;
@@ -393,12 +394,38 @@ header {
   border-top: 5px solid rgb(9, 9, 78);
 }
 
+/* 1 Star logo */
+.premium-logo {
+  background-image: url("./images/star.png");
+  background-size: 100%;
+  height: 25px;
+  width: 25px;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+/* List spacing */
+.premium-div ul {
+  margin: 20px 0;
+}
+
+/* List container spacing */
+.premium-div ul * {
+  margin-bottom: 8px;
+}
+
+/* prices */
+.premium-div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 /* Center div */
-.premium-plus-div {
+.premium-max-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 110%;
   padding: 60px;
   border-radius: 10px;
@@ -406,18 +433,70 @@ header {
   border-top: 8px solid rgb(9, 9, 78);
 }
 
+/* 3 starts logo */
+.premium-max-logo {
+  background-image: url("./images/star.png");
+  background-size: 33%;
+  height: 25px;
+  width: 75px;
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+}
+
+/* List container spacing */
+.premium-max-div ul {
+  margin: 20px 0;
+}
+
+/* List container spacing */
+.premium-max-div ul * {
+  margin-bottom: 8px;
+}
+
+/* prices */
+.premium-max-div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 /* Right Div */
-.premium-max-div {
+.premium-plus-div {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   height: 100%;
   padding: 60px;
   border-radius: 0 10px 10px 0;
   box-shadow: 5px 5px 20px -8px rgba(36, 36, 36, 0.322);
   border-top: 5px solid rgb(9, 9, 78);
+}
+
+/* 2 stars logo */
+.premium-plus-logo {
+  background-image: url("./images/star.png");
+  background-size: 50%;
+  height: 25px;
+  width: 50px;
+  background-repeat: repeat-x;
+  margin-bottom: 20px;
+}
+
+/* List container spacing */
+.premium-plus-div ul {
+  margin: 20px 0;
+}
+
+/* List items spacing */
+.premium-plus-div ul * {
+  margin-bottom: 8px;
+}
+
+/* prices */
+.premium-plus-div p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Footer */
@@ -426,9 +505,136 @@ footer {
   background-color: #171744;
   color: white;
   width: 100%;
-  padding: 0 80px;
+  padding: 50px 230px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2.4fr;
+  column-gap: 20px;
 }
 
+/* Footer elements */
 footer * {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/*  footer titles */
+footer p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Social Media Buttons */
+.social-media-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 0.25fr;
+}
+
+/* Company logo */
+.social-media-logo {
+  background-image: url("./images/Sparkles-logos_white.png");
+  background-size: 120%;
+  height: 26px;
+  width: 190px;
+  background-position: center;
+
+}
+
+/* List container spacing */
+.social-media-div ul * {
   display: inline-block;
+  margin: 0 7px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* instagram logo */
+.insta-logo {
+  background-image: url("./images/instagram.png");
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+}
+
+/* twitter logo */
+.twitter-logo {
+  background-image: url("./images/twitter.png");
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+}
+
+/* Youtube logo */
+.youtube-logo {
+  background-image: url("./images/youtube.png");
+  background-size: 100%;
+  height: 30px;
+  width: 30px;
+  background-position: center;
+}
+
+/* Title of the call to action */
+.call-to-title {
+  font-weight: normal;
+}
+
+/* input call to action */
+.call-to-action-div input {
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 60%;
+  border-radius: 5px;
+  border: 1px rgba(23, 23, 68) solid;
+  color: black;
+}
+
+.call-to-action-div input:focus {
+  outline: none;
+}
+
+/* Button call to action */
+.call-to-action-div button {
+  background-color: rgb(33, 33, 102);
+  height: 27x;
+  color:white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.call-to-action-div button:hover {
+  cursor: pointer;
+  background-color: rgb(43, 43, 133);
+}
+
+/* Final bar container */
+.copy-terms-div {
+  grid-area: 2/1/2/6;
+}
+
+/* items organizing */
+.copy-terms-div * {
+  display: inline-block;
+  margin: 0;
+}
+
+/* copyright */
+.copyright-div p {
+  float: left;
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Terms | Help */
+.terms-div {
+  float: right;
+  margin-right: 30px;
+  margin-bottom: 0;
 }
