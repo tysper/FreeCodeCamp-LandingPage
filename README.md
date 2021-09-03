@@ -11,7 +11,9 @@ I did some changes yesterday, and also added some parts of the page but I forgot
 
 #2021-08-25:
 I've finished everything already, now I have to make a responsive layout, and believe that will take some time because my current layout is a little to complex for me, so I think I will struggle a little. The good thing is that even if I struggle a little in this part, I thinks it is worthy, also I acquired some experiences with flex box and grid. I have a long way to go, yet I feel like I am on the right track.
-Preview: <a href="https://codepen.io/tysper013/full/vYZEzzO">Version 1 - Codepen</a>
+Preview: <a href="https://codepen.io/tysper013/full/vYZEzzO"><strike>Version 1 - Codepen</strike></a>
 
 #2021-08-26:
 Okay I finally finished this project and wow, I think this was my biggest project so far and I feel like struggling a lot, I think I will be a lot better as the time goes, but I really liked doing this project. It helped me undertand some concepts of flexbox and grid, also responsiveness, and that's all. See you in the next one!
+
+#2021-09-03: I kinda broke the link of the first version, this is the final one: <a href="https://codepen.io/tysper013/full/YzQPOOP">CodePen - Final Link</a>
